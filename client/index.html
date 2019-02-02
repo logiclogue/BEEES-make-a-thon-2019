@@ -2,8 +2,20 @@
 <html>
 <head>
     <title>SocketIO Face</title>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body>
+    <canvas id="mirror" height="600" width="800" style="display: none"></canvas>
+    <canvas id="destination" height="300" width="300" style="display: none"></canvas>
+
+    <div class="container">
+        <div class="wrap">
+            <video autoplay height="600" width="800"></video>
+            <canvas id="overlay" height="600" width="800"></canvas>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
     <script src="index.js"></script>
 </body>
